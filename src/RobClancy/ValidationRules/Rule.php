@@ -3,7 +3,6 @@
 use Countable;
 use ArrayIterator;
 use IteratorAggregate;
-use Builder\Buildable;
 
 class Rule implements IteratorAggregate, Countable {
 
@@ -21,6 +20,11 @@ class Rule implements IteratorAggregate, Countable {
 	 */
 	protected $builder;
 
+	/**
+	 * Just set a builder.
+	 *
+	 * @param  RobClancy\ValidationRules\Builder\Buildable
+	 */
 	public function __construct(Buildable $builder)
 	{
 		$this->builder = $builder;
@@ -37,7 +41,7 @@ class Rule implements IteratorAggregate, Countable {
 	{
 		if ( ! in_array($ruleString, $this->rules))
 		{
-			$this->rules[] = $this->build($rule, $params);
+			$this->rules[] = $this->buildRule($rule, $params);
 		}
 		
 		return $this;
@@ -50,7 +54,7 @@ class Rule implements IteratorAggregate, Countable {
 	 * @param  mixed  $params
 	 * @return mixed
 	 */
-	protected function build($rule, $params = null)
+	protected function buildRule($rule, $params = null)
 	{
 		if ($params !== null)
 		{

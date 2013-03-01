@@ -1,5 +1,7 @@
 <?php RobClancy\ValidationRules\Rule\Builder;
 
+use RobClancy\ValidationRules\Buildable;
+
 class Illuminate implements Buildable {
 	
 	/**
