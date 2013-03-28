@@ -3,6 +3,7 @@
 use Countable;
 use ArrayIterator;
 use IteratorAggregate;
+use Robbo\ValidationRules\Builder\BuilderInterface;
 
 class Rule implements IteratorAggregate, Countable {
 
@@ -25,7 +26,7 @@ class Rule implements IteratorAggregate, Countable {
 	 *
 	 * @param  Robbo\ValidationRules\Builder\Buildable
 	 */
-	public function __construct(Buildable $builder)
+	public function __construct(BuilderInterface $builder)
 	{
 		$this->builder = $builder;
 	}

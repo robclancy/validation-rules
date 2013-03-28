@@ -16,7 +16,7 @@ class Factory {
 	 *
 	 * @param  Robbo\ValidationRules\Builder\BuilderInterface
 	 */
-	public function __construct(Builder $builder)
+	public function __construct(BuilderInterface $builder)
 	{
 		$this->builder = $builder;
 	}
