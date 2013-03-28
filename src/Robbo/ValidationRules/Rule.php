@@ -40,7 +40,7 @@ class Rule implements IteratorAggregate, Countable {
 	 */
 	protected function addRule($rule, $params = null)
 	{
-		if ( ! in_array($ruleString, $this->rules))
+		if ( ! in_array($rule, $this->rules))
 		{
 			$this->rules[] = $this->buildRule($rule, $params);
 		}
