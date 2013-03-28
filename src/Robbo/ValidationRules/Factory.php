@@ -1,5 +1,7 @@
 <?php namespace Robbo\ValidationRules\Rule;
 
+use Robbo\ValidationRules\Builder\BuilderInterface;
+
 class Factory {
 
 	/**
@@ -14,7 +16,7 @@ class Factory {
 	 *
 	 * @param  Robbo\ValidationRules\Builder\BuilderInterface
 	 */
-	public function __construct(Buildable $builder)
+	public function __construct(Builder $builder)
 	{
 		$this->builder = $builder;
 	}
