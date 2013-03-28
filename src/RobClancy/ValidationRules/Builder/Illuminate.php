@@ -1,4 +1,4 @@
-<?php RobClancy\ValidationRules\Rule\Builder;
+<?php namespace RobClancy\ValidationRules\Rule\Builder;
 
 use RobClancy\ValidationRules\Buildable;
 
