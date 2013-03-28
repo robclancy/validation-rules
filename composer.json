@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-0": {
-            "RobClancy\\ValidationRules": "src/"
+            "Robbo\\ValidationRules": "src/"
         }
     },
     "minimum-stability": "dev"
