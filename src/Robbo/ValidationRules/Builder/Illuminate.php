@@ -1,4 +1,4 @@
-<?php namespace Robbo\ValidationRules\Rule\Builder;
+<?php namespace Robbo\ValidationRules\Builder;
 
 class Illuminate implements BuilderInterface {
 	

@@ -1,4 +1,4 @@
-<?php namespace RobClancy\ValidationRules\Rule\Builder;
+<?php namespace Robbo\ValidationRules\Builder;
 
 interface BuilderInterface {
 	
