@@ -57,7 +57,7 @@ class Rule implements IteratorAggregate, Countable {
 	 */
 	protected function buildRule($rule, $params = null)
 	{
-		if ($params !== null)
+		if ( ! is_null($params))
 		{
 			if ( ! is_array($params))
 			{
@@ -66,7 +66,7 @@ class Rule implements IteratorAggregate, Countable {
 			}
 		}
 		
-		return $this->builder->make($rule, $params);
+		return $this->builder->make($rule, (array) $params);
 	}
 
 	/**
